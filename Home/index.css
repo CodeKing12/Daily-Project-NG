@@ -22993,13 +22993,13 @@ p {
 
 #header .header-top {
     background: transparent;
-    padding: 17px 75px;
+    padding: 10px 75px;
     border-bottom: 1px solid #eee
 }
 
 @media (max-width:1199px) {
     #header .header-top {
-        padding: 17px 30px
+        padding: 10px 30px
     }
 }
 
@@ -27454,3 +27454,80 @@ body .ui-tooltip {
 #desktop_logo h1 {
     
 }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.number_input {
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.step_buttons, .quantity_input {
+    display: inline-block;
+}
+
+.step_buttons {
+    height: 30px;
+    background-color: #000000;
+    color: white;
+    width: 15%;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 !important;
+}
+
+.step_buttons:hover {
+    opacity: 80%;
+    transition: ease-in 0.2s;
+}
+
+.step_buttons img {
+    margin: 0 auto;
+    width: 11px !important;
+    height: 12px;
+}
+
+.quantity_input {
+    border: 3px solid black;
+    height: 30px;
+    font-size: 19px;
+    width: 60%;
+    text-align: center;
+}
+
+@media (max-width: 450px) {
+    .step_buttons {
+        width: 20%;
+    }
+
+    .quantity_input {
+        width: 50%;
+    }
+}
+
+.product-container:hover {
+    
+}
+
+
+.product-container:hover .cart-btn {
+    position: unset;
+    margin-top: -20px;
+}
+
+@media screen and (max-width: 767px) {
+    .product-container:hover .cart-btn {
+        position: unset;
+        margin-top: unset;
+        margin-top: unset;
+    }
+}
+/*
+#products .product-container .cart-btn, .featured-products .product-container .cart-btn, .product-accessories .product-container .cart-btn, .product-miniature .product-container .cart-btn {
+    position: unset;
+    margin-top: -20px;
+} */

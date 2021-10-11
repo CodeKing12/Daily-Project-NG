@@ -263,7 +263,8 @@
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -23824,7 +23825,7 @@ p {
     box-shadow: 0 0 10px 4px rgba(255, 255, 255, .2);
     height: 40px;
     overflow: hidden;
-    padding: 6px;
+    padding: 5px;
     position: fixed;
     right: 15px;
     text-align: center;
@@ -27545,4 +27546,28 @@ input[type=number]::-webkit-outer-spin-button {
     .multilevel-item .item {
         margin-bottom: 8px;
     }
+}
+
+.wishlist {
+    display: flex;
+}
+
+.cart-items-no {
+    display: inline;
+    background-color: #E81119;
+    color: white;
+    font-size: 14px;
+    border-radius: 100%;
+    height: 15px;
+    width: 14px;
+    text-align: center;
+    margin-top: 4.5px;
+}
+
+.truck {
+    padding-right: 0 !important;
+}
+
+.ishitestimonials-container {
+    display: flex;
 }

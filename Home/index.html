@@ -84,9 +84,9 @@
                               <i class="material-icons remove">&#xE316;</i>
                             </span>
                           </span>
-                          Cosmetic
+                          Home
                         </a>
-                        <div  class="popover sub-menu js-sub-menu collapse" id="top_sub_menu_91189">
+                        <!--<div  class="popover sub-menu js-sub-menu collapse" id="top_sub_menu_91189">
                           <ul class="top-menu"  data-depth="1">
                             <li class="category" id="category-4">
                               <a class="dropdown-item dropdown-submenu" href="4-make-up.html" data-depth="1">
@@ -162,19 +162,19 @@
                             </li>
                           </ul>
                           <img class="category-image" src="../img/c/3-1_thumb.jpg" alt="Cosmetic" title="Cosmetic">
-                        </div>
+                        </div> -->
                       </li>
                       <li class="category" id="category-6">
-                        <a class="dropdown-item" href="6-collection.html" data-depth="0">Collection</a>
+                        <a class="dropdown-item" href="6-collection.html" data-depth="0">About Us</a>
                       </li>
                       <li class="category" id="category-9">
-                        <a class="dropdown-item" href="9-accessories.html" data-depth="0">Accessories</a>
+                        <a class="dropdown-item" href="9-accessories.html" data-depth="0">Contact Us</a>
                       </li>
                       <li class="cms-page" id="cms-page-1">
-                        <a class="dropdown-item" href="content/1-delivery.html" data-depth="0">Delivery</a>
+                        <a class="dropdown-item" href="content/1-delivery.html" data-depth="0">Our Goods</a>
                       </li>
                       <li class="cms-page" id="cms-page-4">
-                        <a class="dropdown-item" href="content/4-about-us.html" data-depth="0">About us</a>
+                        <a class="dropdown-item" href="content/4-about-us.html" data-depth="0">Truck</a>
                       </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -230,7 +230,7 @@
                   <div id="_desktop_cart">
                     <div class="blockcart cart-preview inactive" data-refresh-url="//demo.ishithemes.com/prestashop/PRS125/PRS125L03/en/module/ps_shoppingcart/ajax">
                       <div class="header">
-                        <span class="cart-link">
+                        <span class="cart-link hidden-lg-up">
                           <span class="cart-img hidden-lg-up">
                             <div class="hidden-md-down">
                               <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">          
@@ -259,6 +259,15 @@
                               <svg class="icon" viewBox="0 0 40 40"><use xlink:href="#cart-responsive" x="13%" y="13%"></use></svg>
                             </div>
                           </span>
+                          <span class="cart-content">
+                            <span class="cart-name hidden-md-down">Cart</span>
+                             <span class="cart-products-count hidden-lg-up">0</span>
+                          </span>
+                        </span>
+                        <div class="cart-dropdown hidden-lg-up empty" style="display: block;">
+                          <span>Your cart is empty</span>
+                        </div>
+                      </div>
                           <div class="user-product-wishlist naver">
                             <div class="user-wishlist">
                               <a class="wishlist" href="login0662.html" rel="nofollow">
@@ -266,23 +275,24 @@
                               </a>
                             </div>
                             <div class="user-wishlist">
-                              <a class="wishlist" href="login0662.html" rel="nofollow">
+                              <a class="wishlist" onclick="scroller('ishistoryblock')" rel="nofollow">
                                 <span class="whislist-name">About</span>
                               </a>
                             </div>
                             <div class="user-wishlist">
-                              <a class="wishlist" href="login0662.html" rel="nofollow">
+                              <a class="wishlist" onclick="scroller('footer')" rel="nofollow">
                                 <span class="whislist-name">Contact</span>
                               </a>
                             </div>
                             <div class="user-wishlist">
                               <a class="wishlist" href="login0662.html" rel="nofollow">
-                                <span class="whislist-name">Product</span>
+                                <span class="whislist-name">Products</span>
                               </a>
                             </div>
                             <div class="user-wishlist">
                               <a class="wishlist" href="login0662.html" rel="nofollow">
-                                <span class="whislist-name">Truck</span>
+                                <span class="whislist-name truck">Truck</span>
+                                <span class="cart-items-no hidden-md-down">0</span>
                               </a>
                             </div>
                           </div>
@@ -874,7 +884,7 @@
                           <span class="user-designation"> - Web Designer </span>	
                         </div>
                         <div class="user-info">
-                                    
+                          <img src="../images/architect-3979490.jpg">
                         </div>
                       </div>
                     </div>
@@ -886,7 +896,7 @@
                               <span class="user-designation"> - Web Designer </span>	                        
                         </div>
                         <div class="user-info">
-
+                          <img src="../images/architect-3979490.jpg">
                         </div>
                       </div>
                     </div>
@@ -898,7 +908,7 @@
                               <span class="user-designation"> - Web Designer </span>	                        
                         </div>
                         <div class="user-info">
-
+                          <img src="../images/architect-3979490.jpg">
                         </div>
                       </div>
                     </div>
@@ -1789,7 +1799,7 @@
       </div>
     </main>
 
-    <a id="slidetop" href="#" >&nbsp;</a>
+    <a id="slidetop" href="#" ><img src="../images/iconmonstr-arrow-up-circle-thin-240.png" width="30"></a>
     <script type="text/javascript" src="index.js" ></script>
 
   </body>

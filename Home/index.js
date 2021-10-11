@@ -9515,3 +9515,9 @@ function stepUp(id) {
         inputBox.value = getValue + 1;
     }
 }
+
+function scroller(elemid) {
+	let scrollfigure
+	scrollfigure = document.getElementById(elemid).offsetTop
+	window.scroll(0, scrollfigure-100)
+}

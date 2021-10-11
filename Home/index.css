@@ -15836,7 +15836,7 @@ li.product-flag.pack {
 
 @media (max-width:1199px) {
     #ishitestimonials .testimonial-block {
-        width: 65%
+        width: 100%
     }
 }
 
@@ -27568,6 +27568,27 @@ input[type=number]::-webkit-outer-spin-button {
     padding-right: 0 !important;
 }
 
-.ishitestimonials-container {
-    display: flex;
+@media screen and (min-width: 992px) {
+    .user-description {
+        width: 45%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .user-info {
+        width: 45%;
+    }
+
+    .ishitestimonials-container {
+        display: flex;
+    }
+
+    .owl-item .active, .testimonial-block {
+        width: 100% !important;
+    }
+
+    .user-info img {
+        margin-left: 10%;
+    }
 }
+

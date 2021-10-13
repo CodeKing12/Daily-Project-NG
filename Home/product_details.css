@@ -14405,7 +14405,7 @@ li.product-flag.pack {
 
 .product-comments .comment_advice a {
     text-decoration: none;
-    padding: 0 10px;
+    padding: 0;
     position: relative;
     font-size: 14px;
     color: #232323;
@@ -14443,7 +14443,7 @@ li.product-flag.pack {
     display: none
 }
 
-.product-comments .comment_advice a:after {
+/* .product-comments .comment_advice a:after {
     content: '';
     height: 20px;
     width: 1px;
@@ -14453,7 +14453,7 @@ li.product-flag.pack {
     right: -1px;
     bottom: 0;
     margin: auto
-}
+} */
 
 .product-comments .comment_advice a i {
     font-size: 16px;

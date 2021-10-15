@@ -11668,7 +11668,7 @@ body#checkout #hook-display-after-carrier>[class^="col"].links .row>[class^="col
     margin-right: 15px
 }
 
-.product-quantity #quantity_wanted {
+.product-quantity #quanted {
     color: #232323;
     background-color: #fff;
     height: 2.75rem;
@@ -22391,7 +22391,8 @@ p {
 }
 
 #header a:hover {
-    color: #a6a6a6
+    color: rgb(221, 2, 2);
+    transition: ease 0.3s;
 }
 
 #header .menu-icon {
@@ -22897,7 +22898,7 @@ p {
         border-radius: 50%;
         height: 15px;
         width: 15px;
-        background: #a6a6a6;
+        background: rgb(221, 2, 2);
         color: #fff;
         font-size: 11px;
         right: 11px;
@@ -27544,15 +27545,20 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .cart-items-no {
-    display: inline;
-    background-color: #E81119;
-    color: white;
-    font-size: 14px;
-    border-radius: 100%;
+    border-radius: 50%;
     height: 15px;
-    width: 14px;
+    width: 15px;
+    background: rgb(221, 2, 2);
+    color: #fff;
+    font-size: 11px;
+    right: -12px;
+    top: 4px;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    left: auto;
+    bottom: auto;
     text-align: center;
-    margin-top: 4.5px;
+    margin: 0;
 }
 
 .truck {
@@ -27561,15 +27567,16 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media screen and (min-width: 992px) {
     .user-description {
-        width: 45%;
+        width: 100%;
+        padding: 0 17%;
         margin-top: auto;
         margin-bottom: auto;
     }
-
+/*
     .user-info {
         width: 45%;
     }
-
+*/
     .ishitestimonials-container {
         display: flex;
     }
@@ -27578,7 +27585,75 @@ input[type=number]::-webkit-outer-spin-button {
         width: 100% !important;
     }
 
-    .user-info img {
+  /*  .user-info img {
         margin-left: 10%;
+    }*/
+}
+
+@media screen and (max-width: 350px) {
+    .logo-title {
+        font-size: 18px;
+    }
+}
+
+#ishifooterlinks_block, .block-contact {
+    /*float: right;*/
+    margin-bottom: 10px;
+}
+
+.paymentlogo-container {
+    display: flex;
+    justify-content: end;
+}
+
+.paymentlogo-container p {
+    text-align: center;
+    color: white !important;
+    margin-right: 30px;
+    margin-bottom: 0;
+    padding: 4px 0;
+}
+
+#products .product-container .cart-btn button, .featured-products .product-container .cart-btn button, .product-accessories .product-container .cart-btn button, .product-miniature .product-container .cart-btn .product-quantity button, .all-products-block .product-quantity button {
+    display: block;
+    border-radius: 0;
+    padding: .5rem .6875rem;
+    font-size: unset;
+    font-weight: unset;
+    letter-spacing: unset;
+    background: #232323;
+    border: 1px solid #232323;
+    -webkit-transition: unset; 
+    -moz-transition: unset;
+    -o-transition: unset;
+    transition: unset;
+}
+
+.product-quantity .qty {
+    margin: 15px 0;
+}
+
+.product-quantity #quanted {
+    width: 90px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #232323;
+}
+
+#products .product-container .cart-btn button, .featured-products .product-container .cart-btn button, .product-accessories .product-container .cart-btn button, .product-miniature .product-container .cart-btn .product-quantity button i {
+    display: inline-block;
+}
+
+.cart-btn .product-quantity .input-group-btn-vertical .btn i {
+    color: white;
+}
+
+.search-widget form button[type=submit] {
+    width: 80px;
+}
+
+@media screen and (min-width: 992px) {
+    #menu-icon {
+        width: 0;
     }
 }

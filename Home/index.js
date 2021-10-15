@@ -9497,7 +9497,8 @@ return;$('#js-product-list').fadeOut(500,function(){setProductLayout('listView')
 return;$('#js-product-list').fadeOut(500,function(){setProductLayout('gridView')});$('#js-product-list').fadeIn(500)})});function setProductLayout(layout){if(layout=='listView'){$('#list-view').addClass('checked');$('#grid-view').removeClass('checked');$('#js-product-list .products').removeClass('grid');$('#js-product-list .products').addClass('list');$('#js-product-list .products article').each(function(){$(this).removeClass('col-xs-6 col-sm-6 col-md-4 col-lg-6 col-xl-4');$(this).find('.thumbnail-inner').addClass('col-xs-12 col-sm-6 col-md-4 col-lg-4');$(this).find('.product-description').addClass('col-xs-12 col-sm-6 col-md-8 col-lg-8')});$.totalStorage('productLayout','listView')}else{$('#grid-view').addClass('checked');$('#list-view').removeClass('checked');$('#js-product-list .products').removeClass('list');$('#js-product-list .products').addClass('grid');$('#js-product-list .products article').each(function(){$(this).addClass('col-xs-6 col-sm-6 col-md-4 col-lg-6 col-xl-4');$(this).find('.thumbnail-inner').removeClass('col-xs-12 col-sm-6 col-md-4 col-lg-4');$(this).find('.product-description').removeClass('col-xs-12 col-sm-6 col-md-8 col-lg-8')});$.totalStorage('productLayout','gridView')}}
 
 function stepDown(id) {
-    var inputBox = document.getElementById(id).nextSibling.nextSibling;
+    var inputBox = document.getElementById(id).parentElement.previousElementSibling.previousElementSibling;
+	console.log(inputBox)
     var getValue = parseInt(inputBox.value);
     if (getValue === 1) {
         inputBox.value = 1;
@@ -9507,10 +9508,11 @@ function stepDown(id) {
 }
 
 function stepUp(id) {
-    var inputBox = document.getElementById(id).previousSibling.previousSibling;
+	var inputBox = document.getElementById(id).parentElement.previousElementSibling.previousElementSibling;
+	console.log(inputBox)
     var getValue = parseInt(inputBox.value);
-    if (getValue >= 20) {
-        inputBox.value = 20;
+    if (getValue >= 100) {
+        inputBox.value = 100;
     } else {
         inputBox.value = getValue + 1;
     }

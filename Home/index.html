@@ -59,6 +59,24 @@
           <div class="header-top">
               <div class="header-inner">
                 <div class="header-left col-lg-4 col-md-3 col-md-3 col-xs-4">
+                  <style>
+                    @media screen and (min-width:992px){
+                      .header-left {width:0;}
+
+                      .header-inner {
+                        display: flex;
+                        justify-content: space-between;
+                      }
+
+                      #header #desktop_logo {
+                        margin: unset;
+                      }
+
+                      .product-miniature {
+                        padding: 20px;
+                      }
+                    }
+                  </style>
                   <div id="_desktop_menu">
                     <div id="menu-icon" class="menu-icon">
                       <div class="nav-icon hidden-lg-up hidden-md-down">
@@ -176,7 +194,7 @@
                   </div>
                   <!-- Block search module TOP -->
                   
-                  <div id="_desktop_seach_widget">
+                  <!--<div id="_desktop_seach_widget">
                     <div id="search_widget" class="search-widget" data-search-controller-url="//demo.ishithemes.com/prestashop/PRS125/PRS125L03/en/search">
                       
                       <div class="search-menu-icon">
@@ -193,7 +211,7 @@
                           </svg>
                           <svg class="icon" viewBox="0 0 40 40"><use xlink:href="#magnifying-mobile" x="20%" y="24%"></use></svg>
                         </span>
-                        <!-- <i class="material-icons d-inline">&#xE8B6;</i> -->
+                        <!-- <i class="material-icons d-inline">&#xE8B6;</i> ->
                       </div>
 
                       <form method="get" action="http://demo.ishithemes.com/prestashop/PRS125/PRS125L03/en/search" class="hide">
@@ -209,7 +227,7 @@
                   <!-- /Block search module TOP -->
                 </div>
 
-                <div class="header-center col-lg-4 col-md-6 col-md-6 col-xs-4">
+                <div class="header-center col-lg-8 col-md-6 col-md-6 col-xs-4">
                   <div id="_desktop_header_logo">
                     <div id="desktop_logo">
                       <h1>
@@ -430,7 +448,7 @@
             <p class="sub-title">Our Products</p>
             <h2 class="home-title">What We Sell</h2>
             
-            <ul id="ishiproductstab" class="nav nav-tabs clearfix">
+            <!--<ul id="ishiproductstab" class="nav nav-tabs clearfix">
               <li class="nav-item first_item">
                 <a class="nav-link active" href="#featured-products-block" data-toggle="tab">Iron Rods</a>
               </li>
@@ -440,14 +458,14 @@
               <li class="nav-item last_item">
                 <a class="nav-link " href="#bestseller-products-block" data-toggle="tab">BRC Mesh Wires</a>
               </li>
-            </ul>
+            </ul>-->
             
             <div class="product_content ">
               <div class="tab-content">
-                  <div id="featured-products-block" class="tab-pane active">
+                  <div id="featured-products-block" class="tab-pane active container" style="margin-left:20px; margin-right: 20px;">
                       <div class="block_content row">
-                        <div id="ishi-featured-products" class="owl-carousel">																								 
-                          <div class="multilevel-item">
+                        <div id="ishi-featured-products" class="owl-carousel" style="white-space: normal;">																								 
+                          <!--<div class="multilevel-item">-->
                               <div class="item" data-id-product="1" data-id-product-attribute="1" itemscope itemtype="http://schema.org/Product">
                                 <div itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                                   <meta itemprop="position" content="0" />  
@@ -590,7 +608,291 @@
                                   </article>
                                 </div>
                               </div>
-                          </div>
+                              <div class="item" data-id-product="1" data-id-product-attribute="1" itemscope itemtype="http://schema.org/Product">
+                                <div itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                  <meta itemprop="position" content="0" />  
+                                  <article class="product-miniature js-product-miniature" data-id-product="1" data-id-product-attribute="1" itemprop="item" itemscope itemtype="http://schema.org/Product">
+                                    <div class="product-container">
+                                      <div class="thumbnail-container">
+                                        <div class="thumbnail-inner">
+                                          <a href="javascript:void" class="thumbnail product-thumbnail">
+                                            <img src="../images/iron-rods-474792.jpg" alt="Simul dolorem voluptaria" data-full-size-image-url="../224-large_default/hummingbird-printed-t-shirt.jpg" />
+                                          </a>
+
+                                          <div class="product-list-reviews" data-id="1" data-url="module/productcomments/CommentGrade.json">
+                                            <div class="grade-stars small-stars"></div>
+                                            <div class="comments-nb"></div>
+                                          </div>
+
+                                          <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+                                            <meta itemprop="reviewCount" content="1" />
+                                            <meta itemprop="ratingValue" content="3" />
+                                          </div>
+
+            
+                                          <div class="thumbnail-buttons"> 
+                                            <div class="quickview-btn">
+                                              <a href="#" class="quick-view" data-link-action="quickview" >
+                                                  <img src="../images/iconmonstr-eye-5-240.png" style="width:20px; height: 20px; margin-top: 7px; margin-left: auto; margin-right: auto;">
+                                                  <span class="lblquickview">Quick view</span>
+                                              </a>
+                                            </div>
+                                              
+                                            
+                                          </div>
+
+                                          <div class="product-description">
+                                            <h3 class="h3 product-title" itemprop="name"><a href="javascript:void" itemprop="url" content="home/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white">Simul dolorem voluptaria</a></h3>
+                                            <div class="product-price-and-shipping">
+                                              <span class="price" aria-label="Price">&#8358;29,000</span>
+                                            </div>
+                                                      
+                                            <div class="cart-btn">
+                                              <form action="https://demo.ishithemes.com/prestashop/PRS125/PRS125L03/en/cart" method="post">
+                                                  <input class='carttoken' type="hidden" name="token" value="bfc586298cd7008164f50d47ee2a72ba">
+                                                  <input type="hidden" name="id_product" value="1">
+                                                  <input type="hidden" name="id_customization" value="0">
+                                                  <input type="hidden" name="qty" value="1">
+
+                                                  <div class="product-quantity clearfix">
+                                                    <div class="qty">
+                                                      <div class="input-group bootstrap-touchspin">
+                                                        <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+                                                        <input type="number" name="qty" id="quanted" value="1" class="input-group form-control" aria-label="Quantity" style="display: block;">
+                                                        <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                                                        <span class="input-group-btn-vertical">
+                                                          <button class="btn btn-touchspin js-touchspin bootstrap-touchspin-up" id="increase" onclick="stepUp(this.id)" type="button"><i class="material-icons touchspin-up"></i></button>
+                                                          <button class="btn btn-touchspin js-touchspin bootstrap-touchspin-down" id="decrease" onclick="stepDown(this.id)" type="button"><i class="material-icons touchspin-down"></i></button>
+                                                        </span>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                                  <button data-button-action="add-to-cart" class="btn btn-primary ajax_add_to_cart_button add-to-cart" >
+                                                    <span class="lblcart">Add to cart</span>
+                                                  </button>
+                                              </form>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </article>
+                                </div>
+                              </div>
+                              <div class="item" data-id-product="1" data-id-product-attribute="1" itemscope itemtype="http://schema.org/Product">
+                                <div itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                  <meta itemprop="position" content="0" />  
+                                  <article class="product-miniature js-product-miniature" data-id-product="1" data-id-product-attribute="1" itemprop="item" itemscope itemtype="http://schema.org/Product">
+                                    <div class="product-container">
+                                      <div class="thumbnail-container">
+                                        <div class="thumbnail-inner">
+                                          <a href="javascript:void" class="thumbnail product-thumbnail">
+                                            <img src="../images/iron-rods-474792.jpg" alt="Simul dolorem voluptaria" data-full-size-image-url="../224-large_default/hummingbird-printed-t-shirt.jpg" />
+                                          </a>
+
+                                          <div class="product-list-reviews" data-id="1" data-url="module/productcomments/CommentGrade.json">
+                                            <div class="grade-stars small-stars"></div>
+                                            <div class="comments-nb"></div>
+                                          </div>
+
+                                          <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+                                            <meta itemprop="reviewCount" content="1" />
+                                            <meta itemprop="ratingValue" content="3" />
+                                          </div>
+
+            
+                                          <div class="thumbnail-buttons"> 
+                                            <div class="quickview-btn">
+                                              <a href="#" class="quick-view" data-link-action="quickview" >
+                                                  <img src="../images/iconmonstr-eye-5-240.png" style="width:20px; height: 20px; margin-top: 7px; margin-left: auto; margin-right: auto;">
+                                                  <span class="lblquickview">Quick view</span>
+                                              </a>
+                                            </div>
+                                              
+                                            
+                                          </div>
+
+                                          <div class="product-description">
+                                            <h3 class="h3 product-title" itemprop="name"><a href="javascript:void" itemprop="url" content="home/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white">Simul dolorem voluptaria</a></h3>
+                                            <div class="product-price-and-shipping">
+                                              <span class="price" aria-label="Price">&#8358;29,000</span>
+                                            </div>
+                                                      
+                                            <div class="cart-btn">
+                                              <form action="https://demo.ishithemes.com/prestashop/PRS125/PRS125L03/en/cart" method="post">
+                                                  <input class='carttoken' type="hidden" name="token" value="bfc586298cd7008164f50d47ee2a72ba">
+                                                  <input type="hidden" name="id_product" value="1">
+                                                  <input type="hidden" name="id_customization" value="0">
+                                                  <input type="hidden" name="qty" value="1">
+
+                                                  <div class="product-quantity clearfix">
+                                                    <div class="qty">
+                                                      <div class="input-group bootstrap-touchspin">
+                                                        <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+                                                        <input type="number" name="qty" id="quanted" value="1" class="input-group form-control" aria-label="Quantity" style="display: block;">
+                                                        <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                                                        <span class="input-group-btn-vertical">
+                                                          <button class="btn btn-touchspin js-touchspin bootstrap-touchspin-up" id="increase" onclick="stepUp(this.id)" type="button"><i class="material-icons touchspin-up"></i></button>
+                                                          <button class="btn btn-touchspin js-touchspin bootstrap-touchspin-down" id="decrease" onclick="stepDown(this.id)" type="button"><i class="material-icons touchspin-down"></i></button>
+                                                        </span>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                                  <button data-button-action="add-to-cart" class="btn btn-primary ajax_add_to_cart_button add-to-cart" >
+                                                    <span class="lblcart">Add to cart</span>
+                                                  </button>
+                                              </form>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </article>
+                                </div>
+                              </div>
+                              <div class="item" data-id-product="1" data-id-product-attribute="1" itemscope itemtype="http://schema.org/Product">
+                                <div itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                  <meta itemprop="position" content="0" />  
+                                  <article class="product-miniature js-product-miniature" data-id-product="1" data-id-product-attribute="1" itemprop="item" itemscope itemtype="http://schema.org/Product">
+                                    <div class="product-container">
+                                      <div class="thumbnail-container">
+                                        <div class="thumbnail-inner">
+                                          <a href="javascript:void" class="thumbnail product-thumbnail">
+                                            <img src="../images/iron-rods-474792.jpg" alt="Simul dolorem voluptaria" data-full-size-image-url="../224-large_default/hummingbird-printed-t-shirt.jpg" />
+                                          </a>
+
+                                          <div class="product-list-reviews" data-id="1" data-url="module/productcomments/CommentGrade.json">
+                                            <div class="grade-stars small-stars"></div>
+                                            <div class="comments-nb"></div>
+                                          </div>
+
+                                          <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+                                            <meta itemprop="reviewCount" content="1" />
+                                            <meta itemprop="ratingValue" content="3" />
+                                          </div>
+
+            
+                                          <div class="thumbnail-buttons"> 
+                                            <div class="quickview-btn">
+                                              <a href="#" class="quick-view" data-link-action="quickview" >
+                                                  <img src="../images/iconmonstr-eye-5-240.png" style="width:20px; height: 20px; margin-top: 7px; margin-left: auto; margin-right: auto;">
+                                                  <span class="lblquickview">Quick view</span>
+                                              </a>
+                                            </div>
+                                              
+                                            
+                                          </div>
+
+                                          <div class="product-description">
+                                            <h3 class="h3 product-title" itemprop="name"><a href="javascript:void" itemprop="url" content="home/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white">Simul dolorem voluptaria</a></h3>
+                                            <div class="product-price-and-shipping">
+                                              <span class="price" aria-label="Price">&#8358;29,000</span>
+                                            </div>
+                                                      
+                                            <div class="cart-btn">
+                                              <form action="https://demo.ishithemes.com/prestashop/PRS125/PRS125L03/en/cart" method="post">
+                                                  <input class='carttoken' type="hidden" name="token" value="bfc586298cd7008164f50d47ee2a72ba">
+                                                  <input type="hidden" name="id_product" value="1">
+                                                  <input type="hidden" name="id_customization" value="0">
+                                                  <input type="hidden" name="qty" value="1">
+
+                                                  <div class="product-quantity clearfix">
+                                                    <div class="qty">
+                                                      <div class="input-group bootstrap-touchspin">
+                                                        <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+                                                        <input type="number" name="qty" id="quanted" value="1" class="input-group form-control" aria-label="Quantity" style="display: block;">
+                                                        <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                                                        <span class="input-group-btn-vertical">
+                                                          <button class="btn btn-touchspin js-touchspin bootstrap-touchspin-up" id="increase" onclick="stepUp(this.id)" type="button"><i class="material-icons touchspin-up"></i></button>
+                                                          <button class="btn btn-touchspin js-touchspin bootstrap-touchspin-down" id="decrease" onclick="stepDown(this.id)" type="button"><i class="material-icons touchspin-down"></i></button>
+                                                        </span>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                                  <button data-button-action="add-to-cart" class="btn btn-primary ajax_add_to_cart_button add-to-cart" >
+                                                    <span class="lblcart">Add to cart</span>
+                                                  </button>
+                                              </form>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </article>
+                                </div>
+                              </div>
+                              <div class="item" data-id-product="1" data-id-product-attribute="1" itemscope itemtype="http://schema.org/Product">
+                                <div itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                  <meta itemprop="position" content="0" />  
+                                  <article class="product-miniature js-product-miniature" data-id-product="1" data-id-product-attribute="1" itemprop="item" itemscope itemtype="http://schema.org/Product">
+                                    <div class="product-container">
+                                      <div class="thumbnail-container">
+                                        <div class="thumbnail-inner">
+                                          <a href="javascript:void" class="thumbnail product-thumbnail">
+                                            <img src="../images/iron-rods-474792.jpg" alt="Simul dolorem voluptaria" data-full-size-image-url="../224-large_default/hummingbird-printed-t-shirt.jpg" />
+                                          </a>
+
+                                          <div class="product-list-reviews" data-id="1" data-url="module/productcomments/CommentGrade.json">
+                                            <div class="grade-stars small-stars"></div>
+                                            <div class="comments-nb"></div>
+                                          </div>
+
+                                          <div itemprop="aggregateRating" itemtype="http://schema.org/AggregateRating" itemscope>
+                                            <meta itemprop="reviewCount" content="1" />
+                                            <meta itemprop="ratingValue" content="3" />
+                                          </div>
+
+            
+                                          <div class="thumbnail-buttons"> 
+                                            <div class="quickview-btn">
+                                              <a href="#" class="quick-view" data-link-action="quickview" >
+                                                  <img src="../images/iconmonstr-eye-5-240.png" style="width:20px; height: 20px; margin-top: 7px; margin-left: auto; margin-right: auto;">
+                                                  <span class="lblquickview">Quick view</span>
+                                              </a>
+                                            </div>
+                                              
+                                            
+                                          </div>
+
+                                          <div class="product-description">
+                                            <h3 class="h3 product-title" itemprop="name"><a href="javascript:void" itemprop="url" content="home/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white">Simul dolorem voluptaria</a></h3>
+                                            <div class="product-price-and-shipping">
+                                              <span class="price" aria-label="Price">&#8358;29,000</span>
+                                            </div>
+                                                      
+                                            <div class="cart-btn">
+                                              <form action="https://demo.ishithemes.com/prestashop/PRS125/PRS125L03/en/cart" method="post">
+                                                  <input class='carttoken' type="hidden" name="token" value="bfc586298cd7008164f50d47ee2a72ba">
+                                                  <input type="hidden" name="id_product" value="1">
+                                                  <input type="hidden" name="id_customization" value="0">
+                                                  <input type="hidden" name="qty" value="1">
+
+                                                  <div class="product-quantity clearfix">
+                                                    <div class="qty">
+                                                      <div class="input-group bootstrap-touchspin">
+                                                        <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+                                                        <input type="number" name="qty" id="quanted" value="1" class="input-group form-control" aria-label="Quantity" style="display: block;">
+                                                        <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                                                        <span class="input-group-btn-vertical">
+                                                          <button class="btn btn-touchspin js-touchspin bootstrap-touchspin-up" id="increase" onclick="stepUp(this.id)" type="button"><i class="material-icons touchspin-up"></i></button>
+                                                          <button class="btn btn-touchspin js-touchspin bootstrap-touchspin-down" id="decrease" onclick="stepDown(this.id)" type="button"><i class="material-icons touchspin-down"></i></button>
+                                                        </span>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                                  <button data-button-action="add-to-cart" class="btn btn-primary ajax_add_to_cart_button add-to-cart" >
+                                                    <span class="lblcart">Add to cart</span>
+                                                  </button>
+                                              </form>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </article>
+                                </div>
+                              </div>
+                          <!--</div>-->
                         </div>
                       </div>
                   </div>

@@ -2347,7 +2347,7 @@ select.form-control-lg:not([size]):not([multiple]),
 }
 
 .form-group {
-    margin-bottom: 1.2rem
+    margin-bottom: 1rem
 }
 
 .form-text {
@@ -7225,7 +7225,7 @@ small.value {
 }
 
 #identity input,
-#checkout input:not(.block_newsletter form input) {
+#checkout input {
     height: 40px
 }
 
@@ -24613,7 +24613,7 @@ body#checkout .container-blockreassurance {
     left: -12px;
     height: 26px;
     width: 26px;
-    background: url(../../../../modules/ishiblockwishlist/img/icon/pict_add_wishlist.png) no-repeat 0 0 transparent
+    background: url(../../../modules/ishiblockwishlist/img/icon/pict_add_wishlist.png) no-repeat 0 0 transparent
 }
 
 #wishlist_block #wishlist_block_list {
@@ -27581,107 +27581,4 @@ input[type=number]::-webkit-outer-spin-button {
     .user-info img {
         margin-left: 10%;
     }
-}
-
-.input-icon {
-    position: relative;
-}
-
-.input-icon > i {
-    position: absolute;
-    display: block;
-    transform: translate(0, -50%);
-    top: 50%;
-    pointer-events: none;
-    width: 25px;
-    text-align: center;
-    font-style: normal;
-    font-size: 18px;
-    margin-left: 2.5px;
-}
-
-.input-icon > input {
-    padding-left: 25px;
-    padding-right: 0;
-}
-
-.bank-info {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 1.7;
-    padding: 10px 5%;
-}
-
-.list-big {
-    margin: 20px 7%;
-}
-
-.list-big .acc-num {
-    display: inline-block;
-    width: 100px;
-    margin-right: 20px;
-}
-
-.list-big .bank-name {
-    display: inline-block;
-    width: 110px;
-    margin-right: 20px;
-}
-
-.list-big li {
-    display: flex;
-    margin-bottom: 6px;
-    font-weight: 470;
-}
-
-@media screen and (max-width: 770px) {
-    .list-big {
-        margin: 20px 0;
-    }
-
-    .list-big li {
-        margin-bottom: 18px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .list-big {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 501px) {
-    .list-small {
-        display: none;
-    }
-}
-
-.list-small {
-    margin: 30px 0;
-}
-
-.list-small li {
-    margin: 30px 0;
-}
-
-.list-small div {
-    margin: 8px 0;
-}
-
-#ishifooterlinks_block, .block-contact {
-    /*float: right;*/
-    margin-bottom: 10px;
-}
-
-.paymentlogo-container {
-    display: flex;
-    justify-content: end;
-}
-
-.paymentlogo-container p {
-    text-align: center;
-    color: white !important;
-    margin-right: 30px;
-    margin-bottom: 0;
-    padding: 4px 0;
 }
